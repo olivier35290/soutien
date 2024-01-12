@@ -1,0 +1,50 @@
+<?php
+$posts = [
+    
+    "design" => [
+            [
+                "title" => "Article Design 1",
+                "content"=> "Content Design 1"
+            ],
+            [
+                "title" => "Article Design 2",
+                "content"=> "Content Design 2"  
+            ]
+        
+    ],
+    "development" => [
+            [
+                "title" => "Article Development 1",
+                "content"=> "Content Development 1"
+            ],
+            [
+                "title" => "Article Development 2",
+                "content"=> "Content Development 2"  
+            ]
+        
+    ],
+    "accessibility" => [
+            [
+                "title" => "Article Accessibility 1",
+                "content"=> "Content Accessibility 1"
+            ],
+            [
+                "title" => "Article Accessibility 2",
+                "content"=> "Content Accessibility 2"  
+            ]
+        
+    ]
+    
+];
+
+foreach($posts as $category => $categoryPosts)
+{
+    echo "\n".$category."\n";
+    
+    foreach($categoryPosts as $post)
+    {
+        echo $post["title"]."\n";
+    }
+}
+
+?>
